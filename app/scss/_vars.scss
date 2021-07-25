@@ -2,6 +2,8 @@ $bg: #d6d6d6;
 $title: #202020;
 $text: #333533;
 $orange: #ffd100;
+$yellow: #ffee32;
+
 
 @mixin title {
     font-family: Raleway, "Times New Roman", Times, sans-serif;
@@ -17,4 +19,5 @@ $orange: #ffd100;
 }
 @mixin logo {
     font-family: "Tenor Sans", sans-serif;
+    // font-family: "Halimun", "Tenor Sans", Raleway, "Times New Roman", sans-serif ;
 }
