@@ -17,16 +17,34 @@ $(function () {
   //   $('#home').parallax('50%', 0.1);
   // }
 
+  // $('a[href*=#]').bind("click", function(e){
+           
+  //   var anchor = $(this);
+  //   $('html, body').stop().animate({
+  //     scrollTop: $(anchor.attr('href')).offset().top
+  //   }, 1000);
+  //   e.preventDefault();
+  // });
+
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 100) {
+      $('.scroll-up').fadeIn();
+    } else {
+      $('.scroll-up').fadeOut();
+    }
+  });
+
   //header Navbar
   $('.header').sticky({
     topSpacing: 0
   });
 
+
   $('body').scrollspy({
-    target: '.navbar-custom',
+    target: '.header__inner',
     offset: 70
   })
 
-  // $(".header").menu();
+ 
 
 });
