@@ -324,18 +324,19 @@
 }
 .service__inner {
     justify-content: space-between;
-    flex-direction: column;
+    align-items: center;
     color: $text;
-    margin-top: 40px;
-    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 .service__inner-iconbox {
     background: #fff;
-    border-bottom: 1px solid #d4d4d4;
+    // border-bottom: 1px solid #d4d4d4;
     text-align: center;
     padding: 40px 20px;
     margin: 0 0 20px;
     width: 330px;
+    border-radius: 4px;
 }
 .iconbox-icon {
     margin: 0 0 15px;
@@ -364,20 +365,47 @@
         list-style: outside;
     }
 }
-.iconbox-disign{
-    margin-top: 100px;
-
+.iconbox-disign {
+    margin-bottom: 3em;
 }
 .iconbox__web {
-    align-self: center;
-    
+    margin-top: 11em;
+
+    background: linear-gradient(
+        153deg,
+        rgba(255, 238, 50, 1) 5%,
+        rgba(255, 209, 0, 1) 25%,
+        rgba(248, 204, 1, 1) 50%,
+        rgba(32, 32, 32, 1) 97%
+    );
 }
 .iconbox__help {
-    position: absolute;
-    align-self: flex-end;
-    order: -1;
-    right: 50px;
-    top: 10px;
+    margin-bottom: 11em;
+    background: linear-gradient(
+        153deg,
+        rgba(255, 238, 50, 1) 5%,
+        rgba(255, 209, 0, 1) 25%,
+        rgba(248, 204, 1, 1) 50%,
+        rgba(32, 32, 32, 1) 97%
+    );
+}
+.disign__item {
+    background: linear-gradient(
+        153deg,
+        rgba(255, 238, 50, 1) 5%,
+        rgba(255, 209, 0, 1) 25%,
+        rgba(248, 204, 1, 1) 50%,
+        rgba(32, 32, 32, 1) 97%
+    );
+}
+.disign__item .iconbox-text .iconbox-title {
+    color: #fff;
+}
+.disign__item .iconbox-text .iconbox-desc {
+    color: #fff;
+}
+.icon-magic-wand{
+    color: $title;
 }
 
 //end service
