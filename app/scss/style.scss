@@ -97,7 +97,7 @@
 }
 .logo__text {
     font-size: 60px;
-    color: #fff;
+    color: $orange;
     @include logo;
     padding: 15px 0 0 15px;
     span {
@@ -291,6 +291,9 @@
     background-color: $title;
     @include title;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .service__info {
     display: flex;
