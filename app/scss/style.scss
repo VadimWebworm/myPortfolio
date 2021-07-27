@@ -67,16 +67,16 @@
 #home {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center -100px;
     background-attachment: fixed;
     background-color: #222;
     // height: 100%;
     // background-size: 100% 100%;
-    // background-position: 50% 50%;
+    // background-position: 150% 10%;
     // padding: 0;
 }
 .logo-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: url("../images/pattern.png");
     background-repeat: repeat;
     height: 100%;
@@ -168,8 +168,12 @@
 
 //start header
 .header {
-    background-color: #fff;
-    border-bottom: 1px solid #f5f5f5;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // border-bottom: 1px solid #f5f5f5;
     position: relative;
     width: 100%;
     z-index: 998;
@@ -186,6 +190,7 @@
     font-size: 22px;
     font-weight: 700;
     font-family: Halimun, Raleway, "Times New Roman", Times, sans-serif;
+    color: $orange;
 }
 .menu__list {
     padding-left: 30px;
@@ -200,6 +205,7 @@
 .menu__list li a {
     text-transform: uppercase;
     @include text;
+    color: #fff;
     font-size: 13px;
     &:hover,
     &:focus {
@@ -216,75 +222,8 @@
     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 .header__logo:hover {
-    color: $title;
+    color: $orange;
 }
-// .header {
-//     border-bottom: 1px solid #f5f5f5;
-//     position: relative;
-//     width: 100%;
-//     z-index: 998;
-
-// }
-
-// .navbar-custom {
-//     @include text;
-//     border: 0;
-//     border-radius: 0;
-//     margin: 0;
-//     font-size: 11px;
-// }
-
-// .navbar-custom,
-// .navbar-custom .dropdown-menu {
-//     background: #fff;
-//     padding: 0;
-// }
-
-// .navbar-custom .navbar-brand,
-// .navbar-custom .navbar-nav > li > a,
-// .navbar-custom .navbar-nav .dropdown-menu > li > a {
-//     font-size: 11px;
-//     letter-spacing: 1px;
-//     color: #222;
-// }
-
-// .navbar-custom .nav li.active,
-// .navbar-custom .nav li a:hover,
-// .navbar-custom .nav li a:focus,
-// .navbar-custom .navbar-nav > li.active a {
-//     background: none;
-//     outline: 0;
-//     color: $orange;
-//     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 2 10px 20px 5px rgba(0, 0, 0, 0.05),
-//         3 -10px 20px 5px rgba(0, 0, 0, 0.05);
-// }
-
-// .navbar-custom .navbar-brand {
-//     font-size: 22px;
-//     font-weight: 700;
-//     font-family: Halimun, Raleway, "Times New Roman", Times, sans-serif;
-// }
-
-// .navbar-custom .dropdown-menu {
-//     border: 0;
-//     border-top: 2px solid #e7746f;
-//     border-radius: 0;
-// }
-
-// .navbar-custom .dropdown-menu > li > a {
-//     text-transform: uppercase;
-//     padding: 10px 20px;
-// }
-
-// .navbar-custom .nav .open > a,
-// .navbar-custom .dropdown-menu > li > a:hover,
-// .navbar-custom .dropdown-menu > li > a:focus {
-//     background: #f5f5f5;
-// }
-
-// .navbar-custom .navbar-toggle .icon-bar {
-//     background: #222;
-// }
 //end header
 //start sevice
 #services {
@@ -305,6 +244,7 @@
     font-size: 100px;
     text-transform: uppercase;
     color: $orange;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 .service__quote {
     align-self: flex-end;
@@ -312,24 +252,28 @@
     font-size: 35px;
     opacity: 0.8;
     margin-right: 100px;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 .service__quite-author {
     align-self: flex-end;
     font-size: 18px;
     color: $orange;
     margin: 10px 40px 0 0;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 .service_description {
     align-self: center;
     font-size: 45px;
     text-transform: uppercase;
     margin-top: 40px;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 .service__inner {
     justify-content: space-between;
     align-items: center;
     color: $text;
     color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 50px;
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 .service__inner-iconbox {
@@ -407,11 +351,72 @@
 .disign__item .iconbox-text .iconbox-desc {
     color: #fff;
 }
-.icon-magic-wand{
+.icon-magic-wand {
     color: $title;
 }
 
 //end service
+// start skills
+#skills {
+    background-color: #000;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+.skills {
+    padding-bottom: 50px;
+}
+.skills__info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skills__title {
+    margin: 100px 10px 50px;
+    color: $orange;
+}
+.skills__line {
+    background: rgba(135, 135, 135, 0.5);
+    width: 100px;
+    height: 1px;
+    margin: 30px auto;
+}
+.skill_description {
+    margin-bottom: 50px;
+}
+.chart {
+    display: inline-block;
+    height: 140px;
+    margin: 50px 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+.chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.percent {
+    @include text;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140px;
+    z-index: 2;
+    color: #fff;
+}
+.percent:after {
+    content: "%";
+    font-size: 50%;
+    margin-left: 0.1em;
+}
+.text-center {
+    @include title;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    // font-weight: 600;
+}
+// end skills
 //scroll to top
 .scroll-up {
     position: fixed;

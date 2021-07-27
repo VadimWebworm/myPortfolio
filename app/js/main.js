@@ -18,7 +18,7 @@ $(function () {
   // }
 
   // $('a[href*=#]').bind("click", function(e){
-           
+
   //   var anchor = $(this);
   //   $('html, body').stop().animate({
   //     scrollTop: $(anchor.attr('href')).offset().top
@@ -26,13 +26,21 @@ $(function () {
   //   e.preventDefault();
   // });
 
-  $(window).on('scroll', function() {
-    if ($(this).scrollTop() > 100) {
-      $('.scroll-up').fadeIn();
-    } else {
-      $('.scroll-up').fadeOut();
-    }
-  });
+  // $('').bind("click", function(e){
+           
+  //   var anchor = $(this);
+  //   $('html, body').stop().animate({
+  //     scrollTop: $(anchor.attr('href')).offset().top
+  //   }, 1000);
+  //   e.preventDefault();
+  // });
+  // $(window).on('scroll', function () {
+  //   if ($(this).scrollTop() > 100) {
+  //     $('.scroll-up').fadeIn();
+  //   } else {
+  //     $('.scroll-up').fadeOut();
+  //   }
+  // });
 
   //header Navbar
   $('.header').sticky({
@@ -45,6 +53,22 @@ $(function () {
     offset: 70
   })
 
- 
+
+  //skills
+  $('#skills').waypoint(function(){
+    $('.chart').each(function(){
+    $(this).easyPieChart({
+            size:140,
+            // animate: 2000,
+            lineCap:'butt',
+            scaleColor: false,
+            barColor: '#ffd100',
+            trackColor: 'transparent',
+            lineWidth: 10
+        });
+    });
+},{offset:'100%'});
+
+
 
 });

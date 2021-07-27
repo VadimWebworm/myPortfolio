@@ -19,8 +19,8 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    @include text
-    // color: #fff;
+    @include text // color: #fff;
+;
 }
 ul,
 li {
@@ -44,6 +44,15 @@ li {
     max-width: 1200px;
     margin: auto;
     padding: 0 15px;
+}
+.title-one {
+    @include title;
+    text-transform: uppercase;
+    color: #fff
+}
+.title-two {
+    @include text;
+    color: #fff
 }
 // .active{
 //     color: $orange !important;

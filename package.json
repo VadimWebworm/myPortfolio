@@ -26,7 +26,9 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.2",
+    "easy-pie-chart": "^2.1.7",
     "hideseek": "^0.8.0",
-    "jquery.mmenu": "^7.3.3"
+    "jquery.mmenu": "^7.3.3",
+    "waypoints": "^4.0.1"
   }
 }

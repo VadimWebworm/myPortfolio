@@ -43,7 +43,10 @@ gulp.task('script', function () {
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'node_modules/hideseek/jquery.hideseek.js',
         'node_modules/jquery.mmenu/dist/jquery.mmenu.all.js',
-        'node_modules/bootstrap/dist/js/bootstrap.js'
+        'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/easy-pie-chart/dist/jquery.easypiechart.js',
+        'node_modules/waypoints/lib/jquery.waypoints.js'
+        
 
     ])
         .pipe(concat('libs.min.js'))
