@@ -225,6 +225,7 @@
     color: $orange;
 }
 //end header
+
 //start sevice
 #services {
     background-color: $title;
@@ -356,6 +357,7 @@
 }
 
 //end service
+
 // start skills
 #skills {
     background-color: #000;
@@ -417,6 +419,83 @@
     // font-weight: 600;
 }
 // end skills
+
+//start calltoaction
+.calltoaction * {
+    text-align: center;
+}
+.calltoaction {
+    background: url(../images/item-3.jpg);
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+    color: #999;
+}
+
+.calltoaction h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.calltoaction-decription {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.calltoaction-btn {
+    text-align: center;
+}
+
+.calltoaction-btn > .btn {
+    background: rgba(255, 255, 255, 0.8);
+    color: #111;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.calltoaction-btn > .btn:hover {
+    background: #fff;
+}
+
+.long-down {
+    margin-bottom: 40px;
+}
+.button__inner{
+    position: relative;
+}
+.calltoaction__button {
+    margin-top: 30px;
+    @include text;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    width: 120px;
+    height: 45px;
+    animation: radial-pulse 1s infinite;
+}
+.calltoaction__button:hover{
+    color: $orange;
+    animation: none;
+}
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+    }
+}
+//end calltoaction
+
 //scroll to top
 .scroll-up {
     position: fixed;
