@@ -482,8 +482,10 @@
     animation: radial-pulse 1s infinite;
 }
 .calltoaction__button:hover{
+    transition:  ease-in 0.2s;
     color: $orange;
     animation: none;
+    background-color: transparent;
 }
 @keyframes radial-pulse {
     0% {

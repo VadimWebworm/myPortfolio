@@ -59,11 +59,11 @@ li {
 .button::before,
 .button::after {
     position: absolute;
-	top: 50%;
+	top: 70%;
 	left: 50%;
 	width: 100px;
 	height: 100px;
-	border: 2px solid rgba($orange, 0.1);
+	border: 2px solid rgba($orange, 0.4);
 	border-radius: 50%;
 	content: '';
 	opacity: 0;
