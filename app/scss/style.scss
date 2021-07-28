@@ -177,7 +177,22 @@
     position: relative;
     width: 100%;
     z-index: 998;
+    &.scrolling {
+        height: 5.5em;;
+    }
+    &.hide {
+        top: 7.5em;
+    }
 }
+.header__fixed {
+    z-index: 99999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
 .header__inner {
     padding: 10px 20px;
 }
@@ -597,10 +612,9 @@
     text-align: center;
     padding: 60px 0;
     color: #fff;
-    background-position: center ;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .copyright {
@@ -612,13 +626,12 @@
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 
-
 #footer span {
     color: rgba($orange, 0.6);
     font-size: 14px;
-    transition: all ease-in .2s;
+    transition: all ease-in 0.2s;
 }
-#footer span:hover{
+#footer span:hover {
     color: rgba($orange, 1);
 }
 .copyright__name {
