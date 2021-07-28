@@ -243,7 +243,6 @@
         z-index: 999;
         height: auto;
         z-index: 0;
-
     }
     .sphere_one {
         opacity: 0.3;
@@ -448,13 +447,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 80px 0;
     color: #fff;
     position: relative;
 }
 .calltoaction__overlay {
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 0;
+    padding: 15px 0 25px;
 }
 
 .calltoaction h2 {
@@ -519,20 +518,143 @@
 }
 //end calltoaction
 // start contact
-#contact{
+#contact {
     background-color: #000;
+    padding-bottom: 50px;
 }
 .contact__inner {
-	text-align: center;
-	margin: 0 0 60px;
+    justify-content: center;
 }
-.contact__description{
-    @include text
+.contact__box {
+    text-align: center;
+    margin: 0 0 60px;
+}
+.contact__title {
+    color: $orange;
+    margin: 100px 10px 50px;
+}
+.contact__description {
+    @include text;
+    color: #fff;
+
+    a {
+        color: rgba($orange, 0.6);
+        transition: all ease-in 0.1s;
+    }
+    a:hover {
+        color: $orange;
+    }
+}
+.contact__inner-form {
+    justify-content: center;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group + .form-group {
+    margin-bottom: 20px;
+}
+.sr-only {
+    @include text;
+    color: #fff;
+    font-size: 15px;
+}
+.form-control::placeholder {
+    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-weight: 300;
+}
+.btn__block {
+    width: 100%;
+    text-align: center;
+    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    color: #000;
+    border-radius: 4px;
+    padding: 5px;
+    transition: all ease-in 0.2s;
+}
+.btn__block:hover,
+.btn__block:focus,
+.btn__block:active,
+.btn__block.active {
+    outline: inherit !important;
+}
+.form-control:focus {
+    border-color: rgba($orange, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(251, 195, 40, 0.075) inset, 0 0 8px rgba(251, 195, 40, 0.6) !important;
 }
 .ajax-response {
-	text-align: center;
+    text-align: center;
+}
+.btn__block:hover {
+    background-color: $orange;
 }
 // end contact
+// start footer
+#footer {
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.copyright {
+    margin: 0;
+    @include text;
+    color: #fff;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+
+#footer span {
+    color: rgba($orange, 0.6);
+    font-size: 14px;
+    transition: all ease-in .2s;
+}
+#footer span:hover{
+    color: rgba($orange, 1);
+}
+.copyright__name {
+    font-family: Halimun, Raleway, "Times New Roman", Times, sans-serif;
+    font-size: 14px;
+    color: $orange !important;
+}
+
+.social__links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.social__links li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social__links a {
+    width: 36px;
+    height: 36px;
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social__links a:hover {
+    border: 1px solid rgba($orange, 0.6);
+    color: rgba($orange, 0.8);
+}
+
+//end footer
 
 //scroll to top
 .scroll-up {
