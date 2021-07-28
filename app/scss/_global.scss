@@ -85,6 +85,12 @@ li {
 	opacity: 1;
 	transform: translateX(-50%) translateY(-50%) scale(1);
 }
+.inner__line {
+    background: rgba(135, 135, 135, 0.5);
+    width: 100px;
+    height: 1px;
+    margin: 30px auto;
+}
 // .active{
 //     color: $orange !important;
 // }

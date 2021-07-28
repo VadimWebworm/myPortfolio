@@ -398,13 +398,8 @@
     margin: 100px 10px 50px;
     color: $orange;
 }
-.skills__line {
-    background: rgba(135, 135, 135, 0.5);
-    width: 100px;
-    height: 1px;
-    margin: 30px auto;
-}
-.skill_description {
+
+.skill__description {
     margin-bottom: 50px;
 }
 .chart {
@@ -523,6 +518,21 @@
     }
 }
 //end calltoaction
+// start contact
+#contact{
+    background-color: #000;
+}
+.contact__inner {
+	text-align: center;
+	margin: 0 0 60px;
+}
+.contact__description{
+    @include text
+}
+.ajax-response {
+	text-align: center;
+}
+// end contact
 
 //scroll to top
 .scroll-up {
