@@ -234,6 +234,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+.services__elem {
+    // box-shadow: rgba(255, 255, 255, 0.6);
+    img {
+        position: absolute;
+        z-index: 999;
+        height: auto;
+        z-index: 0;
+
+    }
+    .sphere_one {
+        opacity: 0.3;
+        width: 10%;
+        top: 300px;
+        left: 250px;
+    }
+    .sphere_two {
+        opacity: 0.5;
+        width: 15%;
+        top: 1000px;
+        right: 240px;
+    }
 }
 .service__info {
     display: flex;
@@ -423,24 +446,27 @@
 //start calltoaction
 .calltoaction * {
     text-align: center;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 .calltoaction {
-    background: url(../images/item-3.jpg);
-    background-color: #222;
+    // background: url(../images/item-3.jpg);
     background-repeat: no-repeat;
-    background-position: 0 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-position: center;
     background-size: cover;
     padding: 50px 0;
-    color: #999;
+    color: #fff;
+    position: relative;
+}
+.calltoaction__overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
 }
 
 .calltoaction h2 {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .calltoaction-decription {
@@ -467,7 +493,7 @@
 .long-down {
     margin-bottom: 40px;
 }
-.button__inner{
+.button__inner {
     position: relative;
 }
 .calltoaction__button {
@@ -481,8 +507,8 @@
     height: 45px;
     animation: radial-pulse 1s infinite;
 }
-.calltoaction__button:hover{
-    transition:  ease-in 0.2s;
+.calltoaction__button:hover {
+    transition: ease-in 0.2s;
     color: $orange;
     animation: none;
     background-color: transparent;
