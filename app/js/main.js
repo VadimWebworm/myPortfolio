@@ -17,17 +17,17 @@ $(function () {
   //   $('#home').parallax('50%', 0.1);
   // }
 
-  
 
-    /* ---------------------------------------------- /*
-     * Smooth scroll / Scroll To Top
-    /* ---------------------------------------------- */
 
-    // header Navbar
-    // $('.header').sticky({
-    //   topSpacing: 0
-    // });
-  
+  /* ---------------------------------------------- /*
+   * Smooth scroll / Scroll To Top
+  /* ---------------------------------------------- */
+
+  // header Navbar
+  // $('.header').sticky({
+  //   topSpacing: 0
+  // });
+
 
   // var position = 0;
   // var $element = $('.header');
@@ -47,26 +47,7 @@ $(function () {
   // position = scrollTop;
 
   //static_header
-  let header = $('.header');
-  let hederHeight = header.height(); // вычисляем высоту шапки
-
-  $(window).on('scroll', function() {
-    header.addClass('header_fixed')
-      //     if ($(this).scrollTop() > 1) {
-      //     header.addClass('header_fixed');
-      //     $('body').css({
-      //         'paddingTop': hederHeight + 'px' // делаем отступ у body, равный высоте шапки
-      //     });
-      // } else {
-      //     header.removeClass('header_fixed');
-      //     $('body').css({
-      //         'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
-      //     })
-      // }
-  });
-
-
-
+  
   // $('body').scrollspy({
   //   target: '.header__inner',
   //   offset: 70
@@ -75,17 +56,17 @@ $(function () {
 
   //skills
   // $('#skills').waypoint(function () {
-    $('.chart').each(function () {
-      $(this).easyPieChart({
-        size: 140,
-        // animate: 2000,
-        lineCap: 'butt',
-        scaleColor: false,
-        barColor: '#ffd100',
-        trackColor: 'transparent',
-        lineWidth: 10
-      });
+  $('.chart').each(function () {
+    $(this).easyPieChart({
+      size: 140,
+      // animate: 2000,
+      lineCap: 'butt',
+      scaleColor: false,
+      barColor: '#ffd100',
+      trackColor: 'transparent',
+      lineWidth: 10
     });
+  });
   // }, { offset: '100%' });
 
   //  E-mail validation
