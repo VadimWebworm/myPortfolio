@@ -26,8 +26,8 @@ gulp.task('style', function () {
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
-        'node_modules/animate.css/animate.css',
-        'node_modules/jquery.mmenu/dist/jquery.mmenu.all.css',
+        // 'node_modules/animate.css/animate.css',
+        // 'node_modules/jquery.mmenu/dist/jquery.mmenu.all.css',
         'node_modules/bootstrap/dist/css/bootstrap.css'
     ])
         .pipe(concat('libs.min.css'))
@@ -41,11 +41,9 @@ gulp.task('script', function () {
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         'node_modules/mixitup/dist/mixitup.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
-        'node_modules/hideseek/jquery.hideseek.js',
-        'node_modules/jquery.mmenu/dist/jquery.mmenu.all.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
         'node_modules/easy-pie-chart/dist/jquery.easypiechart.js',
-        'node_modules/waypoints/lib/jquery.waypoints.js'
+        // 'node_modules/waypoints/lib/jquery.waypoints.js'
         
 
     ])

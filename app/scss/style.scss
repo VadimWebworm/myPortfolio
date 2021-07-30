@@ -8,7 +8,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    z-index: 999999;
+    z-index: 99999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,10 +51,10 @@
     border-top-color: $yellow;
     animation: preloader-inner-spin 1.5s linear infinite;
 }
-.preloader-remove {
-    display: none;
-    opacity: 0;
-}
+// .preloader-remove {
+//     display: none;
+//     opacity: 0;
+// }
 @keyframes preloader-inner-spin {
     0% {
         transform: rotate(0deg);
@@ -169,28 +169,13 @@
 //start header
 .header {
     background-color: #000;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    // border-bottom: 1px solid #f5f5f5;
-    position: relative;
+    z-index: 20;
     width: 100%;
-    z-index: 998;
-    &.scrolling {
-        height: 5.5em;;
-    }
-    &.hide {
-        top: 7.5em;
-    }
 }
-.header__fixed {
-    z-index: 99999;
+.header_fixed {
     position: fixed;
-    left: 0;
     top: 0;
-    width: 100%;
-
+    left: 0;
 }
 
 .header__inner {
